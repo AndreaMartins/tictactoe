@@ -1,0 +1,148 @@
+
+ .celltictac {
+   align: center;
+   box-shadow:  3px 3px 3px gray;
+   height: 200px;
+   width: 200px;
+   border-style: solid;
+   box-sizing: border-box;
+   border-width: medium;
+   border-color: gray;
+   background-color: white;
+ }
+
+.navbar {
+  box-shadow: 5px 5px 5px gray;
+
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+}
+
+#countergeneral{
+  display: flex;
+  justify-content: flex-end;
+  color: gray;
+  font-size: 50px;
+  font-weight: bold;
+  padding-right: 80px;
+}
+
+#playernames {
+  position: relative;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+#pname1{
+  font-size: 30px;
+  /*text-shadow: 1px 1px 1px gray;*/
+  float: left;
+  font-weight: bold;
+  color: white;
+  padding-left: 40px;
+}
+
+#pname2{
+  font-size: 30px;
+  /*text-shadow: 1px 1px 1px gray;*/
+  float: right;
+  font-weight: bold;
+  color: white;
+  padding-right: 40px;
+}
+
+#choosemagenta{
+background-color: magenta;
+}
+
+#chooseblue{
+background-color: blue;
+}
+
+#choosegreen{
+background-color: green;
+}
+
+.names{
+  font-size: 10px;
+  padding-left: 10px;
+  pointer-events: none;
+}
+
+#title-tictactoe{
+  font-size: 48px;
+}
+
+#startnewgame{
+  color: gray;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#container-start{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+.coloroption{
+  font-size: 18px;
+  padding-left: 5px;
+  color: white;
+}
+.dropdown-toogle{
+  font-size: 24px;
+}
+
+.popup{
+  font-size: 36px;
+  color: gray;
+  background-color: yellow;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 1000px;
+  height: 50px;
+  margin: auto;
+}
+
+.totalscore{
+  font-size: 36px;
+  color: gray;
+  background-color: yellow;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 1000px;
+  height: 50px;
+  margin: auto;
+}
+
+input {
+  color: white !important;
+  font-weight: bold;
+  max-width: 150px;
+}
+
+/*#popupwinner {
+  visibility: hidden;
+}
+
+
+#totalscore {
+  visibility: hidden;
+}*/

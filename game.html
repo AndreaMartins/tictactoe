@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TictacToe</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+  </head>
+     <!--NAV-->
+    <nav id="nav-iconsnames"class="navbar navbar-default">
+      <div id="div-navcontainer"class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div id="nav-title" class="navbar-header">
+          <button id="responsive-bar" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+          <a id="title-tictactoe"class="navbar-brand" href="#">TIC TAC TOE</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a ihref="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Choose Color<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li id="choosemagenta" class="coloroption">magenta</li>
+                <li id="chooseblue" class="coloroption">blue</li>
+                <li id="choosegreen" class="coloroption">green</li>
+              </ul>
+            </li>
+          </ul>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form id="form-player2" class="navbar-form navbar-right">
+            <div id= "div-inputplayer2" class="form-group">
+              <input id="input-player2" type="text" class="form-control" placeholder="Write your name">
+            </div>
+            <button id="submit-buttom2" type="submit" class="btn btn-default">Confirm</button>
+          </form>
+          <ul id="ul-player2"class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Player 2 <span class="sr-only">(current)</span></a></li>
+          </ul>
+          <form id="form-player1" class="navbar-form navbar-right form-player1">
+            <div id= "div-inputplayer1"class="form-group">
+              <input id="input-player1" type="text" class="form-control" placeholder="Write your name">
+            </div>
+            <button id="submit-buttom1" type="submit" class="btn btn-default">Confirm</button>
+          </form>
+          <ul id="ul-player1"class="nav navbar-nav navbar-right ul-player1">
+            <li class="active"><a href="#">Player 1 <span class="sr-only">(current)</span></a></li>
+          </ul>
+            <!-- <li id="li-player1"class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Choose Color <span class="caret"></span></a>
+              <ul id="dropdown-player1" class="dropdown-menu">
+                <li><a id="choosemagenta1" class="coloroption1" href="#">magenta</a></li>
+                <li><a id="chooseblue1" class="coloroption1" href="#">blue</a></li>
+                <li><a id="choosegreen1" class="coloroption1" href="#">green</a></li>
+                <li role="separator" class="divider"><a href="#"></a></li>
+                <li><a href="#">More Icons</a></li>
+              </ul>
+            </li> -->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+     <!--TABLE TICTACTOE-->
+    <br><div id="all">
+      <div id="playernames" class="names">
+        <p id="pname1">Player Name 1</p>
+        <p id="pname2">Player Name 2</p>
+      </div>
+      <br><div id="table-tic-tac-toe"class="container-fluid parent">
+          <br><div class="row">
+            <div class="row row-centered">
+              <div class="col-md-4 text-center celltictac" id="p1"></div>
+              <div class="col-md-4 text-center celltictac" id="p2"></div>
+              <div class="col-md-4 text-center celltictac" id="p3"></div>
+            </div>
+          <div class="row">
+              <div class="col-md-4 text-center celltictac" id="p4"></div>
+              <div class="col-md-4 text-center celltictac" id="p5"></div>
+              <div class="col-md-4 text-center celltictac" id="p6"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 text-center celltictac" id="p7"></div>
+            <div class="col-md-4 text-center celltictac" id="p8"></div>
+            <div class="col-md-4 text-center celltictac" id="p9"></div>
+          </div>
+        </div>
+      </div>
+    <div id="popupwinner"></div>
+    <div id="totalscore"></div>
+    <div id="countergeneral"></div>
+    <div id="container-start"><button id= "startnewgame" type="button" onClick="window.location.reload()">Start New Game</button></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/tictac.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/mainTic.js" charset="utf-8"></script>
+</body>
+</html>
